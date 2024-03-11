@@ -217,15 +217,21 @@ def get_opt_heat_map(name="long_sharpe"):
 
 
 def get_opt_heat_map_long():
-    return get_opt_heat_map("long_sharpe")
+    fig = get_opt_heat_map("long_sharpe")
+    fig.update_layout(title="Long")
+    return fig
 
 
 def get_opt_heat_map_short():
-    return get_opt_heat_map("short_sharpe")
+    fig = get_opt_heat_map("short_sharpe")
+    fig.update_layout(title="Short")
+    return fig
 
 
 def get_opt_heat_map_blend():
-    return get_opt_heat_map("blend_sharpe")
+    fig = get_opt_heat_map("blend_sharpe")
+    fig.update_layout(title="Blend")
+    return fig
 
 
 def get_test_data():
